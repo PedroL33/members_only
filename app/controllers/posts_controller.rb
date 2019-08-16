@@ -6,7 +6,6 @@ class PostsController < ApplicationController
 
     def index
         @posts = Post.all
-        @user = User.find_by(remember_token: cookies[:remember_token])
     end
     
     def create
